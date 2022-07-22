@@ -26,6 +26,7 @@ const itens = [
 ]
 
 const listFabricantes = document.getElementById('fabricantes')
+const listFabricantesItens = document.getElementById('itens-fabricante')
 
 function createListFabricantes() {
 	fabricante.map((fabr) => {
@@ -40,4 +41,10 @@ function createListFabricantes() {
 	})
 }
 
+function createListaFabricantesItens() {
+	itens.map((it) => {
+		listFabricantesItens.innerHTML += `<li><a class="dropdown-item" href="#">${it.item}</a></li>`
+	})
+}
+createListaFabricantesItens()
 createListFabricantes()

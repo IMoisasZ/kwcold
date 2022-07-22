@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .container-fluid {
@@ -75,4 +74,27 @@
 #fabricantes button:focus {
     outline: 0;
     box-shadow: none;
+}
+
+#carouselExampleControls {
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    margin-top: 1em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
